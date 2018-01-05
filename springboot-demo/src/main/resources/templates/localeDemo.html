@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <title>模板文件进行国际化</title>
+
+</head>
+
+<body>
+
+<p><label th:text="#{welcome}"></label></p>
+
+<form action="/locale/changeSessionLanguage" method="get">
+    <input name="lang"type="hidden"value="zh" />
+    <button>切换为中文</button>
+</form>
+
+<form action="/locale/changeSessionLanguage" method="get">
+    <input name="lang"type="hidden"value="en"/>
+    <button>切换为英文</button>
+</form>
+
+</body>
+</html>
